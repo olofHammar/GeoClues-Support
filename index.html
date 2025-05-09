@@ -5,14 +5,15 @@
   <title>GeoClues Support</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- 1. Import Montserrat (regular, bold, bold‑italic) -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+
   <style>
-    /* fill the screen, remove default margins */
     html, body {
       margin: 0;
       padding: 0;
       height: 100%;
     }
-
     body {
       background-color: #19182A;
       display: flex;
@@ -20,29 +21,29 @@
       justify-content: center;
       align-items: center;
       color: #ffffff;
-      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      /* 2. Use Montserrat everywhere */
+      font-family: 'Montserrat', sans-serif;
       text-align: center;
     }
-
-    /* constrain the icon size */
     .icon {
       max-width: 150px;
       height: auto;
       margin-bottom: 20px;
     }
-
-    /* constrain the banner size */
     .banner {
       max-width: 300px;
       width: 80%;
       height: auto;
       margin-bottom: 30px;
     }
-
+    p {
+      font-size: 1rem;
+      /* make the “email us” line bold to echo the banner weight */
+      font-weight: 700;
+    }
     a {
-      color: #FFD600;           /* a bright yellow that stands out on dark */
+      color: #FFD600;
       text-decoration: none;
-      font-size: 1.1rem;
     }
     a:hover {
       text-decoration: underline;
@@ -51,13 +52,8 @@
 </head>
 
 <body>
-  <!-- your GeoClues icon -->
   <img src="GeoCluesIcon.png" alt="GeoClues Logo" class="icon">
-
-  <!-- your stylized SUPPORT banner -->
   <img src="GeoCluesSupport.png" alt="GEOCLUES SUPPORT" class="banner">
-
-  <!-- email link -->
   <p>If you need help, please <a href="mailto:geo.clues.mobile@gmail.com">email us</a>.</p>
 </body>
 </html>
